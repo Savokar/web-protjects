@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+section {
+                        height: 80vh;
+                        border: 1px solid black;
+}
+
+p {
+                        color: blue;
+}
+
+.red {
+                        color: red;
+}

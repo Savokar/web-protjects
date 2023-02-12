@@ -1,0 +1,46 @@
+* {
+                        background-image: url('./Assets/Images/404Code.PNG');
+
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.notfound {
+                        color: white;
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+                        font-size: 255px;
+}
+
+p {
+                        font-size: 25px;
+}
+
+a {
+                        transition: all 1.3s;
+
+                        color: white;
+                        text-decoration: none;
+                        margin-top: 5px;
+                        font-size: 25px;
+                        width: 125px;
+                        height: 75px;
+                        border-radius: 30px;
+                        
+
+}
+
+a:hover {
+                        
+                        background: white;
+                        color: rgb(59, 59, 59);
+}

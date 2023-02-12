@@ -1,0 +1,84 @@
+nav {
+                        background-color: #242424;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        height: 5.7vh;
+}
+
+nav a {
+text-align: right;
+color: white;
+text-decoration: none;
+}
+
+img {
+                        position: relative;
+                        left: 15px;
+                        margin-top: 3px;
+                        width:50px;height:50px;
+                        border-radius: 55px;
+}
+
+#top {
+background-image: url('https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png');
+margin: auto;
+  display: block;
+width: 450px;
+height: 150px;
+align-content: center;
+color: white;
+text-shadow: 2px 2px 3px black;
+                        border-radius: 70px;
+
+}
+
+.title h1 {
+                        text-align: center;
+animation: float 2s infinite alternate-reverse;
+transition: all 0.5s;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title h1:hover {
+  color: rgb(255, 255, 255);
+}
+
+.title p {
+                        font-size: 20px;
+                        text-align: center;
+animation: float 2s infinite alternate-reverse;
+transition: all 0.5s;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title p:hover {
+  color: rgb(255, 255, 255);
+}
+
+#description {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        text-align: center;
+}
+
+hr {
+                        width: 50vh;
+}
+
+.whydoes {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        text-align: center;                  
+}
+
+.whatdoicode {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        text-align: center;                  
+}
+
+@keyframes float {
+  0% {
+transform: translateY(0);
+  }
+  100% {
+transform: translateY(10px);
+
+  }
+}

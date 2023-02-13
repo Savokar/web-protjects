@@ -22,6 +22,26 @@
     />
   </head>
   <body>
+<nav>
+      <div class="logo">
+        <img src="./Assets/Images/TwitterLogo.png" alt="Twitter Logo" />
+      </div>
+      <div class="links">
+        <div class="home">
+          <a href="index.html">
+            <img src="./Assets/Images/Home.png" />
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="Explore">
+          <a href="#">
+            <h4>#</h4>
+            <p>Explore</p>
+          </a>
+        </div>
+      </div>
+    </nav>
+
     <section id="top">
       <h2>Home</h2>
       <h3>For You</h3>
@@ -30,15 +50,84 @@
 
     <section id="whatishappening">
       <img src="./Assets/Images/TitleLogo.png" alt="PFP" />
-      <button>Everyone </button>
-      
-      <form>
-        <input type="text" placeholder="What's happening" /><br>
-        <div class="everyone">🌎 Everyone can reply</div>
-<br>
-        <hr>
+      <button>Everyone</button>
 
+      <form>
+        <div class="tweet-input">
+        <input type="text" id="tweettext"placeholder="What's happening" /><br />
+        <div class="everyone">🌎 Everyone can reply</div>
+        <br />
+        </div>
+        </div>
+              <button id="post-tweet">Tweet</button>
+
+        <hr />
       </form>
+      <div class="showtweets">
+        <p>Show 5 tweets</p>
+      </div>
     </section>
+
+    <div id="tweet-container"></div>
+
+
+    
+    <script>
+const tweetText = document.getElementById("tweettext");
+const postTweet = document.getElementById("post-tweet");
+const tweetContainer = document.getElementById("tweet-container");
+const form = document.querySelector("form");
+
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const tweet = tweetText.value;
+  if (tweet) {
+    const newTweet = document.createElement("div");
+    newTweet.classList.add("tweet");
+    newTweet.innerHTML = `<p>${tweet}</p>`;
+    tweetContainer.prepend(newTweet);
+    tweetText.value = "";
+    let tweets = localStorage.getItem("tweets");
+    if (tweets) {
+      tweets = JSON.parse(tweets);
+    } else {
+      tweets = [];
+    }
+    tweets.push(tweet);
+    localStorage.setItem("tweets", JSON.stringify(tweets));
+  }
+});
+
+const savedTweets = localStorage.getItem("tweets");
+if (savedTweets) {
+  const tweets = JSON.parse(savedTweets);
+  tweets.forEach(function (tweet) {
+    const newTweet = document.createElement("div");
+    newTweet.classList.add("tweet");
+    newTweet.innerHTML = `<p>${tweet}</p>`;
+    tweetContainer.prepend(newTweet);
+  });
+}
+
+const newTweet = document.createElement("div");
+newTweet.classList.add("tweet");
+newTweet.innerHTML = `<p>${tweet}</p>`;
+tweetContainer.prepend(newTweet);
+
+postTweet.addEventListener("click", function (event) {
+  event.preventDefault();
+  const tweet = tweetText.value;
+  if (tweet) {
+    const newTweet = document.createElement("div");
+    newTweet.classList.add("tweet");
+    const date = new Date();
+    newTweet.innerHTML = `<p>${tweet}</p><p class="timestamp">${date.toLocaleString()}</p>`;
+    tweetContainer.prepend(newTweet);
+    tweetText.value = "";
+  }
+});
+
+    </script>
   </body>
 </html>

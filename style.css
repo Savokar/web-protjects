@@ -1,0 +1,28 @@
+nav {
+background:black;
+     width: 100%;
+     position: absolute;
+     top: 0;
+    right:0px
+}
+
+nav img {
+    height: 75px;
+    width:105px
+        position:absolute;
+    top:15px;
+}
+
+.links a {
+color:white;
+    text-decoration:none;
+    font-weight:100;
+    font-family: Arial;
+    position: relative;
+    left:155px;
+    top:55px;
+    padding:15px
+}
+#active {
+font-weight:600;
+}

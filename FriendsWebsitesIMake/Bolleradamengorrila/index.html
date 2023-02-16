@@ -13,18 +13,35 @@
     <style>
       body,
       html {
-        background: lightblue
-          url("https://images5.alphacoders.com/332/thumb-1920-332002.jpg")
-          no-repeat fixed center;
+        overflow: hidden;       
+        background-image: url("https://images5.alphacoders.com/332/thumb-1920-332002.jpg");   
       }
-      .adam {
+      .adam p {
         color: #fcdd2a;
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-weight: 600;
         text-align: center;
         border-color: 3px black;
         font-size: 50px;
-      }
+        animation: float 1s infinite alternate-reverse;
+transition: all 1.5s;
+height: 700px;
+
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  }
+      @keyframes float {
+  0% {
+transform: translateY(700px);
+  }
+  100% {
+transform: translateY(0px);
+  }
+}
+
     </style>
   </body>
 </html>

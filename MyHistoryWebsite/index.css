@@ -1,0 +1,54 @@
+    html,
+    body {
+                            margin: 0px;
+                            padding: 0px;
+
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Nav Bar */
+
+    /* Background */
+
+    nav {
+                            background-color: #232323;
+                            height: 50px;
+                            text-align: center;
+    }
+
+    /* Link */
+
+    nav a {
+                            color: #fff;
+                            font-size: 19px;
+                            text-decoration: none;
+                            margin: 10px;
+    }
+
+    nav a:hover {
+                            color: #fff;
+                            font-size: 19px;
+                            text-decoration: underline;
+                            margin: 10px;
+    }
+
+    /* Header */
+
+    header {
+                            /* Text */
+                            color: #fff;
+                            text-shadow: #232323 3px 2px;
+                            text-align: center;
+                            /* Background Image */
+
+                            background: url('https://wallpaperaccess.com/full/651709.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            height: 250px;
+                            position: relative;
+                            bottom: 23px;
+    }
+
+    .latest-news {
+                        text-align: center;
+    }

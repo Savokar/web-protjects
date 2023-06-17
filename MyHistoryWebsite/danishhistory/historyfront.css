@@ -19,3 +19,8 @@ body {
                         background-color: firebrick;
                         color: white;
 }
+.readabout a:hover {
+                        background-color: hsl(0, 0%, 14%, 80%);
+                        color: #fff;
+
+}

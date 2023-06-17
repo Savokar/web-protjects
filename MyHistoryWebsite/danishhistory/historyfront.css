@@ -10,7 +10,12 @@ body {
                         text-align: center;
 }
 
-li {
-                        list-style: none;
+.header h1 {
+                        font: 24px Verdana, Arial, Helvetica, sans-serif;
+                        margin: 20px;
+                        padding: 35px;
+                        border: 2px solid;
 
+                        background-color: firebrick;
+                        color: white;
 }

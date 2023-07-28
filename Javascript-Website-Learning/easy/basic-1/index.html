@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+                        <title>My Basic Website</title>
+                        <link rel="stylesheet" type="text/css" href="styles.css">
+                        <script>
+                                                function changeColor() {
+                                                                        const main = document.querySelector('main');
+                                                                        main.style.color = 'red';
+                                                }
+                        </script>
+</head>
+
+<body>
+                        <header>
+                                                <h1>welcome to basic site 1!</h1>
+                        </header>
+
+                      <main>
+<p onclick="changeColor()">Click me to change color!</p>
+                      </main>
+
+<style>
+* {
+                        margin: 0;
+                        padding: 0;
+}
+
+                        header {
+                        color: white;
+                        background-color: #333;                                                
+                        margin: 0;
+                        padding: 10px;
+                        text-align: center;
+                        }
+
+                        p {
+                                                text-align: center;
+                                                padding: 30px;
+                        }
+</style>
+</body>
+
+</html>

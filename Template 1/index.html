@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Resturant Template</title> <!-- Title of website -->
+                        <link rel="stylesheet" href="main.css"> <!-- Stylesheet of the website -->
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+                        <div class="wrapper">
+                                                <div class="loading"></div>
+                        </div>
+                        
+                        <script>
+                                                const fade = () => {
+                                                                        const wrapper = document.querySelector('.wrapper');
+                                                                        wrapper.classList.add('fade');
+                                                };
+                                                window.addEventListener('load', fade);
+                        </script>
+                    
+
+                        <header>
+<nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                                                <a class="navbar-brand" href="#">
+                                                                        <img src="./food/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                                                                        Resturant Template
+                                                </a>
+
+                                                <ul class="nav justify-content-end">
+                                                                        <li class="nav-item">
+                                                                                                <a class="nav-link active" aria-current="page" href="header">Top</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                                                <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                                                                        </li>
+                                                                        <li class="nav-item">
+                                                                                                <a class="nav-link disabled" href="#">Link</a>
+                                                                        </li>
+                                                                        <li class="nav-button">
+                                                                                                <a class="nav-link disabled" href="#booktable">Book Table</a>
+                                                                        </li>
+                                                </ul>
+                        </div>
+
+</nav>                                      
+                        </header>
+
+<div class="Menu">
+                        
+</div>
+
+                        <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+}
+
+/* NAV BAR */
+
+.freeship {
+    font-size: 13px;
+    color: white;
+    background-color: black;
+    height: 34px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    text-align: center;     /* Ensures text alignment */
+}
+
+.nav-bar {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.nav-bar .title {
+    text-align: center;
+    margin: 15px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px; /* Match this to the `li`'s height */
+    height: 40px;
+    padding: 0 15px; /* Add some spacing */
+}
+
+.cart {
+    position: absolute; /* Fix the position of the cart in the viewport */
+    top: 65px; /* Distance from the top of the page */
+    right: 20px; /* Distance from the right side of the page */
+    font-size: 24px; /* Size of the shopping cart icon */
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px; /* Adjust this value to move the count up */
+    right: -10px; /* Adjust this value to move the count to the right */
+    background-color: red; /* Background color of the badge */
+    color: white; /* Text color */
+    font-size: 12px; /* Font size of the count */
+    width: 18px; /* Width of the badge */
+    height: 18px; /* Height of the badge */
+    border-radius: 50%; /* Makes the badge round */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the text inside the circle */
+    font-weight: bold;
+}
+
+
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-image: url('https://files.oaiusercontent.com/file-3EqBijWgv6EsROR4stvXvEFn?se=2024-11-18T11%3A36%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dae9fda2e-4b47-4e73-a196-29de5d83965c.webp&sig=7YlPEQOrp0gwILRTrpYonYOa6eOoX46QoS7KGM7Zf0w%3D');
+    background-size: cover; /* Ensure the image covers the full area */
+    background-position: center center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.cta-button {
+    color: white;
+    border: 2px solid white;
+    padding: 15px 30px; /* Larger button for better clickability */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Slightly larger font size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #000;
+    transform: scale(1.05); /* Adds a slight scale effect on hover */
+}
+
+
+/* SHOP */
+.shoptitle h3 {
+    margin: 15px;
+    
+        text-align: center;
+        font-size: 1.9rem; /* Medium large heading */
+        font-weight: bold; /* Makes it stand out more */
+    }
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap-reverse ;
+    gap: 20px;
+}
+
+.product {
+    
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto;
+    border-radius: 10px; /* Optionally add rounded corners */
+}
+
+.product p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+button {
+    background-color: #168414;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.3s ease;
+}
+
+button:hover {
+background-color: #00000000;
+color: black;
+border: #168414 2px solid;
+}
+
+button:active {
+    transform: scale(1);
+}
+.button1 {
+    margin: 15px;
+    background-color: #b31724;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.3s ease;
+}
+
+.button1:hover {
+background-color: #00000000;
+color: black;
+border: #168414 2px solid;
+}
+
+button1:active {
+    transform: scale(1);
+}
+
+/* BRANDS */ 
+
+.brands-title h3 {
+margin: 15px;
+
+    text-align: center;
+    font-size: 1.9rem; /* Medium large heading */
+    font-weight: bold; /* Makes it stand out more */
+}
+/* Flex container */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+    height: 25vh; /* Makes the container fill the full viewport height */
+}
+
+/* Flex item */
+.flex-item {
+    text-align: center; /* Centers the text under the image */
+}
+
+/* Round image */
+.flex-item img {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Make the height the same as the width to keep it square */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image covers the circular area without distortion */
+}
+
+/* Styling the description */
+.flex-item p {
+    font-size: 1.2rem;
+    margin-top: 10px; /* Adds space between the image and text */
+}

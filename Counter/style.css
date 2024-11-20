@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    width: 300px;
+}
+
+/* Title  */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Number */
+.number {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Buttons */
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Active Button Effect */
+.buttons button:active {
+    transform: scale(0.98);
+    background-color: #003f8a;
+}
